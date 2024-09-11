@@ -1,0 +1,314 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: rgb(69, 68, 68);
+    /* Darker background for the body */
+}
+
+header {
+    background-color: #929191;
+    /* Header color */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section Styles */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    color: grey;
+    position: relative;
+    background-blur: 0.1em;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    position: relative;
+    z-index: 2;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+/* Section Box Styles */
+.section-box {
+    background-color: #d3d3d3;
+    /* Light grey background for sections */
+    border-radius: 8px;
+    /* Rounded corners */
+    border: 4px solid #b9b8b8;
+    /* Thicker border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Light shadow for depth */
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+/* Specific Section Styles */
+.about {
+    background-color: #d3d3d3;
+    /* Light grey background */
+    border-color: #b9b8b8;
+    /* Slightly darker border */
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skills {
+    background-color: #d3d3d3;
+    /* Light grey background */
+    border-color: #b1b1b1;
+    /* Medium grey border */
+    text-align: center;
+}
+
+.skills h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills li {
+    font-size: 1.25rem;
+    margin: 10px 20px;
+    background: #e0e0e0;
+    /* Light grey background for skill items */
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid #d0d0d0;
+    /* Slightly darker border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.education {
+    background-color: #d3d3d3;
+    /* Light grey background */
+    border-color: #c0c0c0;
+    /* Grey border */
+    text-align: center;
+}
+
+.education h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.education ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.contact {
+    background-color: #d3d3d3;
+    /* Light grey background */
+    border-color: #d0d0d0;
+    /* Light grey border */
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.contact li {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #d3d3d3;
+    /* Light grey background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #b0b0b0;
+    /* Slightly darker border for the form */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    /* Light grey background for form fields */
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .social a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .about h2,
+    .skills h2,
+    .education h2,
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .skills ul {
+        flex-direction: column;
+    }
+
+    .skills li {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .contact form {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.875rem;
+    }
+
+    .about h2,
+    .skills h2,
+    .education h2,
+    .contact h2 {
+        font-size: 1.75rem;
+    }
+
+    .skills li {
+        font-size: 1rem;
+    }
+}
